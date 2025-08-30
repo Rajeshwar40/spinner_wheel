@@ -23,7 +23,6 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      # no lockfile in repo → use install (if you add package-lock.json later, switch to `npm ci`)
       - run: npm install
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
